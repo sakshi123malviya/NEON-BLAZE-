@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEON BLAZE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+
+    <nav >
+        <div class="first-nav">
+            <p>Timely Delivery &nbsp; &nbsp; | &nbsp;&nbsp; &nbsp; </p>
+            <p>1 Year Warrenty &nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;</p>
+            <p>Premium Quality </p>
+        </div>
+    </nav>
+
+
+    <header class="header">
+        <div class="logo"></div>
+
+            <input type="checkbox" id="check" placeholder="none">           
+        <div class="icon">
+            <label for="check" class="icons">
+                <i class="fa-solid fa-bars" id="menu-icon"></i>
+                <i class="fa-solid fa-xmark" id="close-icon"></i>
+            </label>
+        </div>
+            <div class="navbar" for="check" >
+                <a href="#" > Home</a>
+                <a href="#"> My order</a>
+                <a href="#">About Us</a>
+                <a href="#">Our Shop</a>
+                <a href="#">customize</a>
+            </div>
+           <div class="search-cart">
+           <a href="#" class="search"><i class="fa-solid fa-magnifying-glass"></i></a>
+           <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+           </div>
+    </header>
+
+    <!--header finish-->
+    <main>
+        <div class="main-img">
+          <!--  <div class="main-img-container">
+                <div class="main-img-contain">
+                  <img src="bkd1.webp" alt="neon wallpaper">
+                </div>
+        
+                <div class="main-img-contain">
+                  <img src="bkd2.webp" alt="neon wallpaper">
+                </div>
+           
+                <div class="main-img-contain">
+                   <img src="bkd3.jp" alt="neon wallpaper">
+                </div>
+            </div>-->
+
+            <!--slideshow-->
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="bkd1.webp" style="width:100%" alt="##">
+                  <div class="text">Caption Text</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="bkd2.webp" style="width:100%" alt="33">
+                  <div class="text">Caption Two</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="bkd3.jpg" style="width:100%" alt="44">
+                  <div class="text">Caption Three</div>
+                </div>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                </div>
+            <!--slideshow over-->
+        </div>
+            <div class="headline">Welcome to NEON BLAZE</div>
+            <div class="customize-btn">
+               <a href="##"> <button type="button" class="customize">CUSTOMISE NEON</button></a>
+              <!--  <button type="button" class="customize">WHATSAPP US</button>-->
+            <!--</div>-->
+        </div>
+        <a href="##"class="whatsapp-img" >
+            <img src="wp.webp" alt="Description of the image">
+          </a>
+    </main>
+</body>
+
+<footer>
+    <div class="footer-web">
+        <div class="footer-main">
+            <div class="personal-info">
+                <div class="email info">
+                    <p>Email</p>
+                    <a href="$$">example@gmail.com</a>
+                </div>
+                <hr>
+                <div class="whatsaap info">
+                    <p class="para">Whatsapp</p>
+                    <a href="##">1212121212 </a>
+                </div>
+                <hr>
+                <div class="phone-no info">
+                    <p>Phone No.</p>
+                    <a href="##">6480653334</a>
+                </div>
+            </div>
+                <div class="customer-quarry info">
+                   <a href="$$" >About Us</a>
+                   <a href="$$">Return & Refund</a>
+                   <a href="$$"> Term & Conditions</a>
+                   <a href="$$"> Privacy Policy</a>
+                </div>
+             
+        </div>
+
+    <div class="last-lines">
+        <p> 2024 NEON BLAZE. All rights are reserved</p>
+        <p>Created with &nbsp; <i class="fa-solid fa-heart"></i> &nbsp; by NEON BLAZE team</p>
+      
+    </div>
+</div>
+</footer>
+<script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+    
+</html>
